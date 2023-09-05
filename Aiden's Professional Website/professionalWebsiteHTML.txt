@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+    Created By: Aiden Haptonstall
+    Due Date: 9/1/2023
+    Project Name: HTML/CSS Capstone Project & Aiden's Professional Website
+   -->
+  <head>
+    <!-- Meta information -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aiden - Web Developer</title>
+
+    <!-- External stylesheets and icons -->
+    <link rel="stylesheet" href="professionalWebsiteCSS.css" />
+    <link rel="icon" href="professionalPFP.png" type="image/x-icon" />
+  </head>
+  <body class="speek">
+    <!-- Header section -->
+    <nav>
+      <header style="display: flex; clear: left">
+        <div class="nav-row">
+          <!-- Website title -->
+          <div id="titleName">
+            &lt;/<name style="color: white">Haptonstall</name>&gt;
+          </div>
+        </div>
+        <!-- Navigation links -->
+        <div class="nav-container">
+          <!-- Navigation menu items -->
+          <container>
+            <div class="navBar">
+              <a href="#about">About&nbsp;Me</a>
+            </div>
+            <div class="navBar"><a href="#work">Work</a></div>
+            <div class="navBar"><a href="#contact">Contact</a></div>
+          </container>
+          <container>
+            <div class="navBar">
+              <a href="https://github.com/GamerztheCoder" target="_blank"
+                >GitHub</a
+              >
+            </div>
+            <div class="navBar">
+              <a
+                href="https://www.linkedin.com/in/aiden-haptonstall-63bab7273/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </div>
+            <div class="navBar">
+              <a
+                href="https://drive.google.com/drive/u/0/folders/1zvus7xE_ppSw6Kzx5gxdJuy4X41YNw3z"
+                target="_blank"
+                >Resume</a
+              >
+            </div>
+          </container>
+          <container>
+            <div class="navBar">
+              <a href="#" onclick="openModal()"> Gratitude&nbsp;Center </a>
+            </div>
+            <div class="navBar" id="texttoSpeech">
+              <a href="#" id="readButton">Text&nbsp;To&nbsp;Speech</a>
+            </div>
+          </container>
+        </div>
+      </header>
+    </nav>
+
+    <!-- Modal Overlay -->
+    <div id="modal-overlay" class="modal-overlay">
+      <!-- Modal Content -->
+      <div id="modal-content" class="modal-content">
+        <!-- Close button -->
+        <span
+          class="close-button"
+          style="cursor: pointer"
+          onclick="closeModal()"
+          >&times;</span
+        >
+        <pre>
+        <!-- Sign-in form -->
+      <span id="login">Sign In</span>
+
+      <span style="color: red;">Note: This does give me your email.
+      If you do not want to submit your email,
+      you do not have to.
+      </span>
+
+      Name:
+      <input id="name">
+
+      Email:
+      <input id="email" type="email">
+
+      Message:
+      <input id="message">
+
+      <button onclick="closeSignIn()">Submit</button>
+      </pre>
+      </div>
+    </div>
+
+    <!-- Hero section -->
+    <section id="hero">
+      <h2>
+        Hello, I am Aiden Haptonstall and I am a
+        <span id="changeText">web developer.</span>
+      </h2>
+    </section>
+
+    <!-- About Me section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <!-- Personal bio -->
+      <p id="aboutMe">
+        My journey here today has been a mix of passion, hard work, and tech
+        exploration. I started playing with code and design early on, realizing
+        the digital world was my thing. I dug into coding, tried out different
+        styles, and kept pushing myself. Along the way, I faced challenges,
+        learned a lot, and turned my tech interest into a real skill. Developing
+        projects taught me teamwork and the excitement of making things real.
+        And now, all that has led me to become a web developer. It's a showcase
+        of my progress and an open invite for you to join me in this ongoing
+        adventure through tech and creativity.
+      </p>
+    </section>
+
+    <!-- Work section -->
+    <section id="work">
+      <h2>Work</h2>
+      <!-- Images representing work projects -->
+      <a href="#" style="width: 95px; height: 95px">
+        <img
+          class="programIMG"
+          src="Screenshot (9).png"
+          alt="Img_1Solar"
+          onclick="openProgram('./1SolarWeb/oneSolarHomeHTML.html')"
+          style="width: 95px; height: 95px"
+        />
+      </a>
+      <a href="#" style="width: 95px; height: 95px">
+        <img
+          class="programIMG"
+          src="pongIMG.png"
+          alt="Img_Pong"
+          onclick="openProgram('./Pong_Game/pong.html')"
+          style="width: 95px; height: 95px"
+        />
+      </a>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <p id="mySkills">Certifications Obtained: JavaScript, Python</p>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <pre>
+Email: haptonstall.aiden@gmail.com
+Phone Number: (480)819-1643
+    </pre
+      >
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <p>&copy; 2023 Aiden Haptonstall. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript scripts -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="professionalWebsiteJS.js"></script>
+
+    <!-- Internal CSS styles -->
+    <style></style>
+  </body>
+</html>
